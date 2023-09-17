@@ -30,6 +30,15 @@ function App() {
               warnWhenUnsavedChanges: true,
               projectId: "pxq1ws-zx6Qe6-ac4TmN",
             }}
+            resources={[
+              {
+                name: "posts",
+                list: "/posts",
+                create: "/posts/create",
+                edit: "/posts/edit/:id",
+                show: "/posts/show/:id",
+              },
+            ]}
           >
             <Routes>
               <Route index element={<WelcomePage />} />
